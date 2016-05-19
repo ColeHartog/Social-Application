@@ -1,0 +1,22 @@
+<ion-view view-title="{{chatRoom.users[0].username}} and {{chatRoom.users[1].username}}">
+    <ion-content class="padding bg noScroll">
+        <div class="messagesList">
+            <div class="message" ng-repeat="message in chatRoom.messages">
+                <div ng-class="{moveleft: message.author._id === user._id}" class="messagePic" style="background-image: url({{message.author.profileImgUrl}})">
+                </div>
+                <div ng-hide="message.author._id === user._id" class="arrow-left" style="background-color: rgb({{user.color.r}}, {{user.color.g}}, {{user.color.b}})"></div>
+                <div class="messagemessagediv" style="background-color: rgb({{user.color.r}}, {{user.color.g}}, {{user.color.b}})">
+                    <p>{{message.text}}</p>
+                </div>
+                <div ng-show="message.author._id === user._id" class="arrow-right" style="background-color: rgb({{user.color.r}}, {{user.color.g}}, {{user.color.b}})"></div>
+                <div ng-show="message.author._id === user._id" class="messagePic" style="background-image: url({{message.author.profileImgUrl}})"></div>
+            </div>
+        </div>
+        <div class="bottomInputDiv">
+            <textarea class="bottomInput" placeholder="new message..." ng-model="newMessage.text"></textarea>
+            <button class="button button-small button-calm sendButt" ng-click="sendMessage(newMessage.text)">
+                Send
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

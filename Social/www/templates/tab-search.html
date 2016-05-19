@@ -1,0 +1,27 @@
+<ion-view view-title="Find Friends">
+    <ion-content class="noScroll">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <form ng-submit="search(searchInput)">
+                    <input id="searchInput" type="text" placeholder="Search" ng-model="searchInput" ng-change="search(searchInput)">
+                </form>
+            </label>
+        </div>
+        <div class="list" id="scroll">
+
+            <a class="item item-avatar" ng-show="searchResults.length" ng-hide="user.pending.indexOf(person._id) !== -1 || inRequests(person._id)" ng-repeat="person in searchResults">
+                <div class="resultImg" style="background-image: url({{person.profileImgUrl}})"></div>
+                <p class="resultName">{{person.username}}</p>
+                <i class="icon ion-plus-circled searchAddIcon assertive" on-tap="addFriend(person._id)" ng-class="{balanced: inRequests(person._id)}"></i>
+            </a>
+
+            <a class="item item-avatar" ng-hide="searchResults.length" ng-repeat="person in user.requests">
+                <div class="resultImg" style="background-image: url({{person.profileImgUrl}})"></div>
+                <h2 class=""><strong>{{person.username}}</strong></h2>
+                <p>wants to be your friend</p>
+                <i class="icon ion-plus-circled searchAddIcon balanced" on-tap="addFriend(person._id)"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

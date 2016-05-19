@@ -1,0 +1,23 @@
+<ion-view view-title="{{user.username}}">
+    <ion-content class="noScroll">
+        <div class="settingProfileImg" style="background-image: url({{user.profileImgUrl}})"></div>
+
+        <ion-list>
+            <button class="button button-full button-calm" on-tap="showProfileImgPopup()">
+                Change Profile Image
+            </button>
+            <button class="button button-full button-positive" on-tap="showColorPopup()">
+                Choose Chat Color
+            </button>
+            <li class="item item-toggle">
+                Push Notifications
+                <label class="toggle toggle-royal">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+        </ion-list>
+    </ion-content>
+</ion-view>

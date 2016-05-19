@@ -1,0 +1,25 @@
+<ion-view view-title="Login">
+    <ion-content class="padding">
+        <div id="loginDiv" class="list">
+            <label class="item item-input" ng-class="{errorInput: loginError === 'User Does Not Exist' || loginError === 'Username Already In Use'}">
+                <span class="input-label">Username</span>
+                <input type="text" ng-model="input.username">
+            </label>
+            <label class="item item-input" ng-class="{errorInput: loginError === 'Incorrect Password'}">
+                <span class="input-label">Password</span>
+                <input type="password" ng-model="input.password">
+            </label>
+            <button class="button button-block button-calm" ng-click="login(input)">
+                Login
+            </button>
+            <button class="button button-block button-positive" ng-click="register(input)">
+                Register
+            </button>
+        </div>
+        <div class="fadeBox" ng-hide="hideSpinner">
+            <div class="loaderDiv">
+                <ion-spinner id="loginSpinner" icon="lines" class="spinner-energized"></ion-spinner>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

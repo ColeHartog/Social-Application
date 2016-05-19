@@ -1,0 +1,212 @@
+.bottomInputDiv {
+    position: fixed;
+    width: 107%;
+    bottom: 1px;
+    left: -3.5%;
+    font-size: 0;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.bottomInput {
+    width: 82%;
+    display: inline-block;
+    height: auto;
+    font-size: 20px;
+    line-height: 1.3;
+    outline: none;
+    border: none;
+    padding: 10px 5px 5px 10px;
+    word-break: break-word;
+    resize: none;
+    border-radius: 20px 0px 0px 0px;
+    border: 1px solid #222;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+}
+
+.sendButt {
+    padding: 5px 5px;
+    width: 18%;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    border-radius: 0px 20px 0px 0px;
+    border: 1px solid #222;
+    border-color: #222 !important;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.bg {
+    background-image: url(../img/concrete_seamless.png);
+    color: #222;
+}
+
+.errorInput {
+    background: #ff9696;
+    transition: background .35s linear;
+}
+
+.fadeBox {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.fadeBox.ng-hide{
+    opacity: 0;
+}
+
+.loaderDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#loginSpinner svg {
+    width: 50px;
+    height: 50px;
+}
+
+.resultName {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px !important;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.searchAddIcon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.friendReqDesc {
+    position: absolute;
+    bottom: 0;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+
+#scroll {
+    height: calc(96% - 65px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.settingProfileImg {
+    margin: 5% 10% 1% 10%;
+    width: 80%;
+    height: 80vw;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.colorPreview {
+    width: 100%;
+    height: 50px;
+}
+
+.imagePreview {
+    border: 1px solid black;
+    width: 100%;
+    height: 230px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.resultImg {
+    width: 15vw;
+    height: 15vw;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.messagesList {
+    width: 100%;
+    height: 88%;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.message {
+    min-height: 70px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.messagePic {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 0;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.messagemessagediv {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 152px);
+    padding: 15px 10px 5px 10px;
+    margin: 7px 8px;
+    border-radius: 7px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.moveleft {
+    width: 64px;
+    background-image: url() !important;
+}
+
+.arrow-right {
+	width: 14px; 
+	height: 14px;
+    position: absolute;
+    top: 25px;
+    right: 69px;
+    transform: rotate(45deg);
+}
+
+.arrow-left {
+	width: 14px; 
+	height: 14px;
+    position: absolute;
+    top: 25px;
+    left: 69px;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+

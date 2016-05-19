@@ -1,0 +1,15 @@
+<ion-view view-title="Chats">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in user.friends" type="item-text-wrap" ui-sref="tab.chat-detail({chatId: person._id})" ui-sred-opts="{reload: true}">
+                <div class="resultImg" style="background-image: url({{person.profileImgUrl}})"></div>
+                <p class="resultName">{{person.username}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

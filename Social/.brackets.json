@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/Cole/code/iontest/Social/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic.min.js",
+        "C:/Users/Cole/code/iontest/Social/platforms/android/build/intermediates/assets/debug/www/lib/platform.js/platform.js",
+        "C:/Users/Cole/code/iontest/Social/www/js/app.js",
+        "C:/Users/Cole/code/iontest/Social/www/js/loginCtrl.js"
+    ]
+}

@@ -1,0 +1,17 @@
+<div>
+    <div class="colorPreview" style="background: rgb( {{user.color.r}}, {{user.color.g}}, {{user.color.b}})">
+
+    </div>
+    <div class="range range-positive">
+        <h3 style="color: red">R</h3>
+        <input type="range" name="Red" min="0" max="255" value="{{colorPicker.r}}" ng-model="colorPicker.r">
+    </div>
+    <div class="range range-positive">
+        <h3 style="color: green">G</h3>
+        <input type="range" name="Green" min="0" max="255" value="{{colorPicker.g}}" ng-model="colorPicker.g">
+    </div>
+    <div class="range range-positive">
+        <h3 style="color: blue">B</h3>
+        <input type="range" name="Blue" min="0" max="255" value="{{colorPicker.b}}" ng-model="colorPicker.b">
+    </div>
+</div>
